@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf6fb;
+            color: #333;
+        }
+        header {
+            background-color: #a8d0e6;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #b8e1f5;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #9ccfe7;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .section-container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 900px;
+        }
+        .section-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .family-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .family-card {
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .family-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        .family-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .family-card h3 {
+            margin: 10px 0 5px;
+        }
+        .family-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+    /* Add this CSS to style the audio player */
+    audio {
+        display: block;
+        margin: 30px auto; /* Centers the audio element */
+        position: relative;
+        top: 20px; /* Adjusts the spacing to make it slightly lower */
+    }
+
+        footer {
+            text-align: center;
+            background-color: #a8d0e6;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Heart of My Work</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Family Section -->
+    <section id="family" class="section-container">
+        <h2>Family</h2>
+        <p>Meet my family! They are my strength and support in every step of life:</p>
+        <div class="family-details">
+            <div class="family-card">
+                <img src="image/father.jpeg" alt="Father">
+                <h3>Father</h3>
+                <p><b>Name:</b> Zakaria Bin Abdullah</p>
+                <p><b>Relationship:</b> Father</p>
+                <p><b>Age:</b> 48</p>
+            </div>
+            <div class="family-card">
+                <img src="image/mom.jpeg" alt="Mother">
+                <h3>Mother</h3>
+                <p><b>Name:</b> Fatimah Binti Mamat</p>
+                <p><b>Relationship:</b> Mother</p>
+                <p><b>Age:</b> 47</p>
+            </div>
+            <div class="family-card">
+                <img src="image/sister.jpeg" alt="Sibling 1">
+                <h3>Sibling 1</h3>
+                <p><b>Name:</b> Nur Aina Syafika Binti Zakaria</p>
+                <p><b>Relationship:</b> Eldest Daughter</p>
+                <p><b>Age:</b> 21</p>
+            </div>
+            <div class="family-card">
+                <img src="image/angah.jpeg" alt="Sibling 2">
+                <h3>Sibling 2</h3>
+                <p><b>Name:</b> Nur Aini Syafika Binti Zakaria</p>
+                <p><b>Relationship:</b> Second Daughter</p>
+                <p><b>Age:</b> 19</p>
+            </div>
+            <div class="family-card">
+                <img src="image/acik.jpeg" alt="Sibling 3">
+                <h3>Sibling 3</h3>
+                <p><b>Name:</b> Nurul Idatul Akma Binti Zakaria</p>
+                <p><b>Relationship:</b> Third Daughter</p>
+                <p><b>Age:</b> 17</p>
+            </div>
+            <div class="family-card">
+                <img src="image/adik.jpeg" alt="Sibling 4">
+                <h3>Sibling 4</h3>
+                <p><b>Name:</b> Muhammad Danish Faris Bin Zakaria</p>
+                <p><b>Relationship:</b> Youngest Son</p>
+                <p><b>Age:</b> 13</p>
+            </div>
+        </div>
+    
+        <audio controls autoplay>
+            <source src="audio/family_audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aina Syafika. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
